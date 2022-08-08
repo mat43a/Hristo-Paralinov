@@ -1,0 +1,31 @@
+using System;
+
+namespace OldBulgarianCalendar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int Sirius = 0; Sirius <=5; Sirius++)
+            {
+                for (int Jupiter = 0; Jupiter <=12; Jupiter++)
+                {
+                    for (int Season = 0;  Season<= 4; Season++)
+                    {
+                        for (int week = 0; week <=13; week++)
+                        {
+                            for (int day = 0; day < 7; day++)
+                            {
+                                Console.WriteLine(day);
+                            }
+                            Console.WriteLine(week);
+                        }
+                        break;
+                    }
+                    break;
+                }
+                break
+            }
+        }
+    }
+}
