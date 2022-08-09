@@ -10,11 +10,27 @@ namespace OldBulgarianCalendar
             {
                 for (int Jupiter = 0; Jupiter <= 12; Jupiter++)
                 {
-                    for (int Season = 0; Season <= 4; Season++)
+                    for (int Season = 1; Season <= 4; Season++)
                     {
+                     if (Season == 1)
+                {
+                    Console.WriteLine($"Season - Winter");
+                }
+                else if (Season == 2)
+                {
+                    Console.WriteLine($"Season - Spring");
+                }
+                else if (Season==3)
+                {
+                    Console.WriteLine($"Season - Summer");
+                }
+                else if (Season==4)
+                {
+                    Console.WriteLine($"Season - Autumn");
+                }
                         for (int week = 1; week <= 13; week++)
                         {
-                            Console.WriteLine(week);
+                            Console.WriteLine($"Week- " + (week));
                             for (int day = 1; day <= 7; day++)
                             {
                                 Console.Write($"{day} ");
